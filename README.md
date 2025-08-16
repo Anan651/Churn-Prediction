@@ -60,9 +60,11 @@ git clone https://github.com/Anan651/churn-prediction-assistant.git
 cd churn-prediction-assistant
 
 # 2. Create virtual environment
+(If you are using anaconda : conda create --name env )
 python -m venv venv
 
 # 3. Activate virtual environment
+(for anaconda : conda activate env)
 # venv\Scripts\activate
 
 # 4. Install dependencies
@@ -70,10 +72,10 @@ pip install -r requirements.txt
 
 # 5. Create a .env file in project root with the following content:
 # (edit GROQ_API_KEY with your key)
-cat <<EOT > .env
+Inside the .env
 API_URL=http://localhost:8080
 GROQ_API_KEY=your_groq_api_key_here
-EOT
+
 
 # 6. Run the FastAPI backend
 uvicorn api:app --reload --host 0.0.0.0 --port 8080
