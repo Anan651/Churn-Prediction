@@ -29,15 +29,18 @@ An end-to-end **customer churn prediction assistant** combining:
 ---
 
 ## 📂 Repository Structure
-├── api.py # FastAPI backend
+├── app/
+│ ├── api.py # FastAPI backend
 
-├── chatbot_llm.py # Groq LLM wrapper for JSON extraction
+│ ├── chatbot_llm.py # LLM integration
 
-├── streamlit_app.py # Streamlit frontend
+│ ├── streamlit_app.py # Streamlit chatbot frontend
 
-├── log_reg_with_encoders.pkl # Trained churn prediction model
+│ └── init.py # (optional, can be empty)
 
-├── requirements.txt # Dependencies
+├── log_reg_with_encoders.pkl # Pretrained model
+
+├── requirements.txt # Python dependencies
 
 └── AI-Powered Assistant for Churn # Project documentation
 
